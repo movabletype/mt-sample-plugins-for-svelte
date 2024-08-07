@@ -1,0 +1,7 @@
+<script type="module">
+  import { Email, mountEmailSvelte } from "<mt:var name="static_uri">plugins/ContentFieldTypeEmailSvelte/js/build/email.js?v=<mt:var name="mt_version_id" escape="url">";
+
+  ContentTypeEditor.registerCustomType("email", mountEmailSvelte);
+  // ContentTypeEditor.registerCustomType("email", mountEmailCustomElement);
+
+</script>
