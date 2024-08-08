@@ -1,0 +1,33 @@
+name: ContentFieldTypeEmailReact
+id: ContentFieldTypeEmailReact
+key: ContentFieldTypeEmailReact
+
+content_field_types:
+  email:
+    label: Email
+    data_type: varchar
+    order: 55
+    icon_class: ic_mail
+    can_data_label_field: 1
+    field_html: field_html.tmpl
+    field_html_params: $Core::MT::ContentFieldType::SingleLineText::field_html_params
+    relaceable: 1
+    ss_validator: $Core::MT::ContentFieldType::SingleLineText::ss_validator
+    list_props:
+      email:
+        base: __virtual.string
+        col: value_varchar
+        terms: $Core::MT::ContentFieldType::Common::terms_text
+        use_blank: 1
+    options_validation_handler: $Core::MT::ContentFieldType::SingleLineText::options_validation_handler
+    options_html: options_html.tmpl
+    options_script: options_script.tmpl
+    options:
+      - label
+      - description
+      - required
+      - display
+      - min_length
+      - max_length
+      - initial_value
+
