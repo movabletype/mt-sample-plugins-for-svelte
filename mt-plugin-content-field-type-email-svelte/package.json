@@ -26,7 +26,7 @@
     "@typescript-eslint/parser": "^7.6.0",
     "eslint": "^8.57.0",
     "eslint-plugin-svelte": "^2.39.0",
-    "mt": "/var/www/html/internal-movabletype",
+    "mt": "github:movabletype/movabletype",
     "prettier": "^3.3.0",
     "prettier-plugin-svelte": "^3.2.3",
     "rollup": "^4.17.2",
