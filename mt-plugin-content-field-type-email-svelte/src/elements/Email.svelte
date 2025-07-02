@@ -41,7 +41,7 @@
       {...{ ref: "max_length" }}
       type="number"
       name="max_length"
-      id="single_line_text-max_length"
+      id="email-max_length"
       class="form-control w-25"
       min="1"
       bind:value={$fieldsStore[fieldIndex].options.max_length}
@@ -56,7 +56,7 @@
       {...{ ref: "initial_value" }}
       type="text"
       name="initial_value"
-      id="single_line_text-initial_value"
+      id="email-initial_value"
       class="form-control"
       bind:value={$fieldsStore[fieldIndex].options.initial_value}
     />
