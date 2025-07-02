@@ -68,7 +68,7 @@ function Email(props) {
         <input
           type="number"
           name="max_length"
-          id="single_line_text-max_length"
+          id="email-max_length"
           class="form-control w-25"
           min="1"
           value={maxLength}
@@ -83,7 +83,7 @@ function Email(props) {
         <input
           type="text"
           name="initial_value"
-          id="single_line_text-initial_value"
+          id="email-initial_value"
           class="form-control"
           value={initialValue}
           onChange={onChangeInitialValue}
