@@ -39,7 +39,7 @@ function Email(props) {
 
   return (
     <ContentFieldOptionGroup
-      type="email"
+      type="emailr"
       field={props.fields[props.fieldIndex]}
       fieldIndex={props.fieldIndex}
       fieldsStore={props.fieldsStore}
@@ -47,13 +47,13 @@ function Email(props) {
       options={props.fields[props.fieldIndex].options}
     >
       <ContentFieldOption
-        id="email-min_length"
+        id="emailr-min_length"
         label={window.trans("Min Length")}
       >
         <input
           type="number"
           name="min_length"
-          id="email-min_length"
+          id="emailr-min_length"
           class="form-control w-25"
           min="0"
           value={minLength}
@@ -62,13 +62,13 @@ function Email(props) {
       </ContentFieldOption>
 
       <ContentFieldOption
-        id="email-max_length"
+        id="emailr-max_length"
         label={window.trans("Max Length")}
       >
         <input
           type="number"
           name="max_length"
-          id="email-max_length"
+          id="emailr-max_length"
           class="form-control w-25"
           min="1"
           value={maxLength}
@@ -77,13 +77,13 @@ function Email(props) {
       </ContentFieldOption>
 
       <ContentFieldOption
-        id="email-initial_value"
+        id="emailr-initial_value"
         label={window.trans("Initial Value")}
       >
         <input
           type="text"
           name="initial_value"
-          id="email-initial_value"
+          id="emailr-initial_value"
           class="form-control"
           value={initialValue}
           onChange={onChangeInitialValue}
