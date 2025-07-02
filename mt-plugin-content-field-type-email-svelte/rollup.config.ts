@@ -10,7 +10,7 @@ import css from "rollup-plugin-css-only";
 import cleaner from "rollup-plugin-cleaner";
 
 const production = !process.env.ROLLUP_WATCH;
-const outputDir = "mt-static/plugins/ContentFieldTypeEmailSvelte/js/build";
+const outputDir = "mt-static/plugins/ContentFieldTypeEmailSvelte/dist";
 
 export default {
   input: ["src/email.ts"],
