@@ -1,8 +1,8 @@
 <script lang="ts">
   import { Writable } from "svelte/store";
 
-  import ContentFieldOptionGroup from "../../node_modules/mt/src/contenttype/elements/ContentFieldOptionGroup.svelte";
-  import ContentFieldOption from "../../node_modules/mt/src/contenttype/elements/ContentFieldOption.svelte";
+  import ContentFieldOptionGroup from "mt/src/contenttype/elements/ContentFieldOptionGroup.svelte";
+  import ContentFieldOption from "mt/src/contenttype/elements/ContentFieldOption.svelte";
 
   // svelte-ignore unused-export-let
   export let config: MT.ContentType.ConfigSettings;

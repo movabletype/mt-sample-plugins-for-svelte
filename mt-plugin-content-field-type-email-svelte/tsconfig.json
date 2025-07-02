@@ -20,5 +20,6 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "skipLibCheck": true
-  }
+  },
+  "include": ["src", "node_modules/mt/src/contenttype"]
 }
