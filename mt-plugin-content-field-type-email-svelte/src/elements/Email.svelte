@@ -19,29 +19,29 @@
 </script>
 
 <ContentFieldOptionGroup
-  type="email"
+  type="emails"
   bind:field={$fieldsStore[fieldIndex]}
   {id}
   bind:options={$fieldsStore[fieldIndex].options}
 >
-  <ContentFieldOption id="email-min_length" label={window.trans("Min Length")}>
+  <ContentFieldOption id="emails-min_length" label={window.trans("Min Length")}>
     <input
       {...{ ref: "min_length" }}
       type="number"
       name="min_length"
-      id="email-min_length"
+      id="emails-min_length"
       class="form-control w-25"
       min="0"
       bind:value={$fieldsStore[fieldIndex].options.min_length}
     />
   </ContentFieldOption>
 
-  <ContentFieldOption id="email-max_length" label={window.trans("Max Length")}>
+  <ContentFieldOption id="emails-max_length" label={window.trans("Max Length")}>
     <input
       {...{ ref: "max_length" }}
       type="number"
       name="max_length"
-      id="email-max_length"
+      id="emails-max_length"
       class="form-control w-25"
       min="1"
       bind:value={$fieldsStore[fieldIndex].options.max_length}
@@ -49,14 +49,14 @@
   </ContentFieldOption>
 
   <ContentFieldOption
-    id="email-initial_value"
+    id="emails-initial_value"
     label={window.trans("Initial Value")}
   >
     <input
       {...{ ref: "initial_value" }}
       type="text"
       name="initial_value"
-      id="email-initial_value"
+      id="emails-initial_value"
       class="form-control"
       bind:value={$fieldsStore[fieldIndex].options.initial_value}
     />
