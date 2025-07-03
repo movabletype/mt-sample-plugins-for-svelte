@@ -1,6 +1,8 @@
 {
   "name": "mt-plugin-content-field-email-svelte",
-  "version": "1.0.0",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "build-svelte:app": "rollup --config rollup.config.ts --configPlugin typescript",
