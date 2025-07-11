@@ -1,6 +1,8 @@
 {
   "name": "mt-plugin-content-field-email-svelte",
-  "version": "1.0.0",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "build-svelte:app": "rollup --config rollup.config.ts --configPlugin typescript",
@@ -20,18 +22,16 @@
     "@rollup/plugin-replace": "^5.0.2",
     "@rollup/plugin-typescript": "^11.1.6",
     "@tsconfig/svelte": "^5.0.4",
+    "@types/jquery": "^3.5.32",
     "@types/node": "^20.12.11",
-    "@types/rollup-plugin-css-only": "^3.1.3",
     "@typescript-eslint/eslint-plugin": "^7.11.0",
     "@typescript-eslint/parser": "^7.6.0",
     "eslint": "^8.57.0",
     "eslint-plugin-svelte": "^2.39.0",
-    "mt": "/var/www/html/internal-movabletype",
     "prettier": "^3.3.0",
     "prettier-plugin-svelte": "^3.2.3",
     "rollup": "^4.17.2",
     "rollup-plugin-cleaner": "^1.0.0",
-    "rollup-plugin-css-only": "^4.3.0",
     "rollup-plugin-esbuild": "^6.1.1",
     "rollup-plugin-livereload": "^2.0.5",
     "rollup-plugin-svelte": "^7.2.0",
@@ -41,6 +41,7 @@
     "typescript": "~5.4"
   },
   "dependencies": {
+    "mt": "github:movabletype/movabletype",
     "tslib": "^2.6.0"
   }
 }

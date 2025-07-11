@@ -6,11 +6,10 @@ import livereload from "rollup-plugin-livereload";
 import sveltePreprocess from "svelte-preprocess";
 import typescript from '@rollup/plugin-typescript';
 import svelte from "rollup-plugin-svelte";
-import css from "rollup-plugin-css-only";
 import cleaner from "rollup-plugin-cleaner";
 
 const production = !process.env.ROLLUP_WATCH;
-const outputDir = "mt-static/plugins/ContentFieldTypeEmailSvelte/js/build";
+const outputDir = "mt-static/plugins/ContentFieldTypeEmailSvelte/dist";
 
 export default {
   input: ["src/email.ts"],
@@ -30,7 +29,6 @@ export default {
       sourceMap: true,
       minify: production,
     }),
-    css({ output: "bundle.css" }),
     svelte({
       preprocess: sveltePreprocess({ sourceMap: !production }),
       compilerOptions: {
