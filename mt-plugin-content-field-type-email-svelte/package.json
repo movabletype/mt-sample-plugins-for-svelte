@@ -41,7 +41,7 @@
     "typescript": "~5.4"
   },
   "dependencies": {
-    "mt": "github:movabletype/movabletype",
+    "@sixapart/mt-toolkit": "^1.0.0-rc2",
     "tslib": "^2.6.0"
   }
 }
