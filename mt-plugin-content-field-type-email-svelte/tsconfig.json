@@ -15,11 +15,11 @@
     // Import non-ES modules as default imports.
     "esModuleInterop": true,
     "resolveJsonModule": true,
-    "typeRoots": ["node_modules/@types"],
+    "typeRoots": ["node_modules/@types", "node_modules/@sixapart"],
     "noImplicitAny": false,
     "jsx": "preserve",
     "baseUrl": ".",
     "skipLibCheck": true
   },
-  "include": ["src", "node_modules/@sixapart/mt-toolkit"]
+  "include": ["src"]
 }

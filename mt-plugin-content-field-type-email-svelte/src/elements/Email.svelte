@@ -1,3 +1,11 @@
+<script context="module" lang="ts">
+  export type EmailOptions = {
+    min_length?: number;
+    max_length?: number;
+    initial_value?: string;
+  };
+</script>
+
 <script lang="ts">
   import { Writable } from "svelte/store";
 
@@ -5,13 +13,18 @@
     ContentFieldOption,
     ContentFieldOptionGroup,
   } from "@sixapart/mt-toolkit/contenttype";
+  import type {
+    ConfigSettings,
+    Field,
+    OptionsHtmlParams,
+  } from "@sixapart/mt-toolkit/contenttype";
 
   // svelte-ignore unused-export-let
-  export let config: MT.ContentType.ConfigSettings;
+  export let config: ConfigSettings;
   export let fieldIndex: number;
-  export let fieldsStore: Writable<Array<MT.ContentType.Field>>;
+  export let fieldsStore: Writable<Array<Field<EmailOptions>>>;
   // svelte-ignore unused-export-let
-  export let optionsHtmlParams: MT.ContentType.OptionsHtmlParams;
+  export let optionsHtmlParams: OptionsHtmlParams;
 
   const id = `field-options-${$fieldsStore[fieldIndex].id}`;
 
