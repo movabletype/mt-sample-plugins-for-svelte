@@ -27,7 +27,7 @@ Svelte実装でコンテンツタイプのフィールドタイプを追加す�
 
 本プラグインは Movable Type 製品サポートの対象外となります。 不具合・ご要望は GitHub リポジトリの Issues の方までご連絡ください。
 
-https://github.com/movabletype/mt-sample-plugins-svelte/issues
+https://github.com/movabletype/mt-sample-plugins-for-svelte/issues
 
 
 ## LICENSE
