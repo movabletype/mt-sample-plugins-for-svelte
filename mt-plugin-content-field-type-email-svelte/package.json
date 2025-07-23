@@ -41,7 +41,7 @@
     "typescript": "~5.4"
   },
   "dependencies": {
-    "@sixapart/mt-toolkit": "^1.0.0-rc2",
+    "@sixapart/mt-toolkit": "^1.0.0-rc3",
     "tslib": "^2.6.0"
   }
 }

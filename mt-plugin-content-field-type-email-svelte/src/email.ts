@@ -1,10 +1,12 @@
 import Email from "./elements/Email.svelte";
+import { EmailOptions } from "./elements/Email.svelte";
 
-function mountEmailSvelte(
-  props: any, // eslint-disable-line @typescript-eslint/no-explicit-any
-  target: Element,
-  /* @ts-expect-error : MT is not defined */
-): MT.ContentType.CustomContentFieldObject {
+import type { CustomContentFieldMountFunction } from "@sixapart/mt-toolkit/contenttype";
+
+const mountEmailSvelte: CustomContentFieldMountFunction<EmailOptions> = function (
+  props,
+  target
+) {
   const emailSvelte = new Email({
     props: props,
     target: target,
@@ -15,6 +17,6 @@ function mountEmailSvelte(
       emailSvelte.$destroy();
     },
   };
-}
+};
 
 export { Email, mountEmailSvelte };
