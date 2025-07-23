@@ -1,8 +1,10 @@
 <script lang="ts">
   import { Writable } from "svelte/store";
 
-  import ContentFieldOptionGroup from "mt/src/contenttype/elements/ContentFieldOptionGroup.svelte";
-  import ContentFieldOption from "mt/src/contenttype/elements/ContentFieldOption.svelte";
+  import {
+    ContentFieldOption,
+    ContentFieldOptionGroup,
+  } from "@sixapart/mt-toolkit/contenttype";
 
   // svelte-ignore unused-export-let
   export let config: MT.ContentType.ConfigSettings;
