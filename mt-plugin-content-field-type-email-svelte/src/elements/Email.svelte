@@ -1,11 +1,3 @@
-<script context="module" lang="ts">
-  export type EmailOptions = {
-    min_length?: number;
-    max_length?: number;
-    initial_value?: string;
-  };
-</script>
-
 <script lang="ts">
   import { Writable } from "svelte/store";
 
@@ -18,6 +10,7 @@
     Field,
     OptionsHtmlParams,
   } from "@sixapart/mt-toolkit/contenttype";
+  import type { EmailOptions } from "./type";
 
   // svelte-ignore unused-export-let
   export let config: ConfigSettings;
