@@ -1,5 +1,5 @@
 import Email from "./elements/Email.svelte";
-import { EmailOptions } from "./elements/Email.svelte";
+import { EmailOptions } from "./elements/type";
 
 import type { CustomContentFieldMountFunction } from "@sixapart/mt-toolkit/contenttype";
 
