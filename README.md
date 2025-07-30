@@ -12,14 +12,14 @@ Svelte実装でコンテンツタイプのフィールドタイプを追加す�
 ## インストール
 
 - ダウンロードした zip ファイルを展開します。
-- 展開したフォルダの中の下記のフォルダを、サーバー上の plugins フォルダの中にアップロードします。
+- 展開したフォルダの中にある下記のいずれかのフォルダを、サーバー上の plugins フォルダの中にアップロードします。
   - mt-plugin-content-field-type-email-svelte/plugins/ContentFieldTypeEmailSvelte
   - mt-plugin-content-field-type-email-react/plugins/ContentFieldTypeEmailReact
-- 次に下記のフォルダを、サーバー上の mt-static > plugins のフォルダの中にアップロードします。
+- 次に、同じく展開したフォルダにある下記のいずれかのフォルダを、サーバー上の mt-static > plugins のフォルダの中にアップロードします。
   - mt-plugin-content-field-type-email-svelte/mt-static/plugins/ContentFieldTypeEmailSvelte
   - mt-plugin-content-field-type-email-react/mt-static/plugins/ContentFieldTypeEmailReact
 
-## 動作確認環境
+## 動作環境
 
 - Movable Type 8.4.0 以降
 
