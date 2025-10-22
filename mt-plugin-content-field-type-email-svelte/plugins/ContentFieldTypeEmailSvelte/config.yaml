@@ -19,7 +19,7 @@ content_field_types:
     can_data_label_field: 1
     field_html: field_html.tmpl
     field_html_params: $Core::MT::ContentFieldType::SingleLineText::field_html_params
-    relaceable: 1
+    replaceable: 1
     ss_validator: $Core::MT::ContentFieldType::SingleLineText::ss_validator
     list_props:
       emails:
