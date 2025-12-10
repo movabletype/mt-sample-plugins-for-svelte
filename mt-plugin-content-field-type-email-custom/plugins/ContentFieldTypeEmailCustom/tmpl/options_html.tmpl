@@ -1,0 +1,23 @@
+<mt:app:ContentFieldOptionGroup
+   type="emailc">
+
+  <mtapp:ContentFieldOption
+     id="emailc-min_length"
+     label="<__trans phrase="Min Length">">
+    <input ref="min_length" type="number" name="min_length" id="emailc-min_length" class="form-control w-25" min="0" value={ options.min_length || 0 }>
+  </mtapp:ContentFieldOption>
+
+  <mtapp:ContentFieldOption
+     id="emailc-max_length"
+     label="<__trans phrase="Max Length">">
+    <input ref="max_length" type="number" name="max_length" id="emailc-max_length" class="form-control w-25" min="1" value={ options.max_length || 255 }>
+  </mtapp:ContentFieldOption>
+
+  <mtapp:ContentFieldOption
+     id="emailc-initial_value"
+     label="<__trans phrase="Initial Value">">
+    <input ref="initial_value" type="text" name="initial_value" id="emailc-initial_value" class="form-control" value={ options.initial_value }>
+  </mtapp:ContentFieldOption>
+
+</mt:app:ContentFieldOptionGroup>
+
