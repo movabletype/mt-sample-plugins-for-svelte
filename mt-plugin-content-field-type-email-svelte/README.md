@@ -1,3 +1,3 @@
 # mt-plugin-content-field-type-svelte
 
-こちらの [README.md](../README.md) をご覧ください。
+mt-sample-plugins-for-svelte の [README.md](https://github.com/movabletype/mt-sample-plugins-for-svelte/blob/main/README.md) をご覧ください。
