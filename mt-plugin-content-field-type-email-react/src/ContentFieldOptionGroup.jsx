@@ -103,7 +103,7 @@ function ContentFieldOptionGroup(props) {
         type="hidden"
         name="id"
         id={props.type + "-id"}
-        class="form-control"
+        className="form-control"
         value={props.field.isNew ? `id:${props.field.id}` : props.field.id}
       />
 
@@ -116,7 +116,7 @@ function ContentFieldOptionGroup(props) {
           type="text"
           name="label"
           id={props.type + "-label"}
-          class="form-control html5-form"
+          className="form-control html5-form"
           value={label}
           onChange={onChangeLabel}
           required
@@ -134,7 +134,7 @@ function ContentFieldOptionGroup(props) {
           type="text"
           name="description"
           id="{type}-description"
-          class="form-control"
+          className="form-control"
           aria-describedby={props.type + "-description-field-help"}
           value={description}
           onChange={onChangeDescription}
@@ -147,13 +147,13 @@ function ContentFieldOptionGroup(props) {
       >
         <input
           type="checkbox"
-          class="mt-switch form-control"
+          className="mt-switch form-control"
           id={props.type + "-required"}
           name="required"
           checked={required}
           onChange={onChangeRequired}
         />
-        <label for={props.type + "-required"}>
+        <label htmlFor={props.type + "-required"}>
           {window.trans("Is this field required?")}
         </label>
       </ContentFieldOption>
@@ -168,7 +168,7 @@ function ContentFieldOptionGroup(props) {
         <select
           name="display"
           id={props.type + '-display'}
-          class="custom-select form-control form-select"
+          className="custom-select form-control form-select"
           value={display}
           onChange={onChangeDisplay}
         >
@@ -181,8 +181,8 @@ function ContentFieldOptionGroup(props) {
 
       { props.children }
 
-      <div class="form-group-button">
-        <button type="button" class="btn btn-default" onClick={closePanel}>
+      <div className="form-group-button">
+        <button type="button" className="btn btn-default" onClick={closePanel}>
           {window.trans("Close")}
         </button>
       </div>
