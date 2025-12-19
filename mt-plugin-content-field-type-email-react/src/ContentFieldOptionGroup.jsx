@@ -7,6 +7,11 @@ import { recalcHeight } from "./Utils";
 function ContentFieldOptionGroup(props) {
   let mounted = useRef(false);
 
+  // added in Svelte
+  const getRoot = () => {
+    return document.querySelector("#field-options-" + props.field.id);
+  };
+
   useEffect(() => {
     if (mounted.current) {
       return;
@@ -51,11 +56,6 @@ function ContentFieldOptionGroup(props) {
     );
   };
 
-  // added in Svelte
-  const getRoot = () => {
-    return document.querySelector("#field-options-" + props.field.id);
-  };
-  
   const [label, setLabel] = useState(props.field.label);
   const [description, setDescription] = useState(props.options.description);
   const [required, setRequired] = useState(props.options.required);
