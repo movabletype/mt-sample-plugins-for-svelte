@@ -5,10 +5,6 @@ import ContentFieldOption from "./ContentFieldOption";
 import { recalcHeight } from "./Utils";
 
 function ContentFieldOptionGroup(props) {
-  if (!props.options.display) {
-    props.options.display = "default";
-  }
-
   let mounted = useRef(false);
 
   useEffect(() => {
@@ -63,7 +59,7 @@ function ContentFieldOptionGroup(props) {
   const [label, setLabel] = useState(props.field.label);
   const [description, setDescription] = useState(props.options.description);
   const [required, setRequired] = useState(props.options.required);
-  const [display, setDisplay] = useState(props.options.display);
+  const [display, setDisplay] = useState(props.options.display || "default");
 
   const onChangeLabel = (e) => {
     setLabel(() => e.target.value);
