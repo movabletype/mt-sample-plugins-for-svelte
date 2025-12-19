@@ -1,6 +1,7 @@
 import js from "@eslint/js";
 import globals from "globals";
 import pluginReact from "eslint-plugin-react";
+import pluginReactRefresh from "eslint-plugin-react-refresh";
 import { defineConfig } from "eslint/config";
 
 export default defineConfig([
@@ -11,6 +12,7 @@ export default defineConfig([
     languageOptions: { globals: globals.browser }
   },
   pluginReact.configs.flat.recommended,
+  pluginReactRefresh.configs.recommended,
   {
     settings: {
       react: {
