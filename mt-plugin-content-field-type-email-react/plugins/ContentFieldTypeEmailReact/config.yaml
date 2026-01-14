@@ -1,7 +1,7 @@
 name: ContentFieldTypeEmailReact
 id: ContentFieldTypeEmailReact
 key: ContentFieldTypeEmailReact
-version: 0.001000
+version: 0.001001
 description: <__trans phrase="This is a sample plugin to add a content field (React version).">
 plugin_link: https://github.com/movabletype/mt-sample-plugins-for-svelte
 author: Six Apart Ltd.
