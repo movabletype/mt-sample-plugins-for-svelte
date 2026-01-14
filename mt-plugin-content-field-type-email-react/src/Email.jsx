@@ -54,7 +54,7 @@ function Email(props) {
           type="number"
           name="min_length"
           id="emailr-min_length"
-          class="form-control w-25"
+          className="form-control w-25"
           min="0"
           value={minLength}
           onChange={onChangeMinLength}
@@ -69,7 +69,7 @@ function Email(props) {
           type="number"
           name="max_length"
           id="emailr-max_length"
-          class="form-control w-25"
+          className="form-control w-25"
           min="1"
           value={maxLength}
           onChange={onChangeMaxLength}
@@ -84,7 +84,7 @@ function Email(props) {
           type="text"
           name="initial_value"
           id="emailr-initial_value"
-          class="form-control"
+          className="form-control"
           value={initialValue}
           onChange={onChangeInitialValue}
         />

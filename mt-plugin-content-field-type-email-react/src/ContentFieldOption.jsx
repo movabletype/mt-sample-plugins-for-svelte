@@ -29,7 +29,7 @@ function ContentFieldOption(props) {
   return (
     <div
       id={props.id + '-field'}
-      class={className}
+      className={className}
       {...attrProps}
       {...attrShowProps}
     >
@@ -38,17 +38,17 @@ function ContentFieldOption(props) {
           if (props.label && props.showLabel) {
             if (props.required) {
               return (
-                <label for={props.id}>
+                <label htmlFor={props.id}>
                   {props.label}
 
-                  <span class="badge badge-danger">
+                  <span className="badge badge-danger">
                     {window.trans('Required')}
                   </span>
                 </label>
               );
             } else {
               return (
-                <label for={props.id}>
+                <label htmlFor={props.id}>
                   {props.label}
                 </label>
               );  
@@ -62,7 +62,7 @@ function ContentFieldOption(props) {
       {
         (() => {
           if (props.hint && props.showHint) {
-            return (<small id={props.id + '-field-help'} class="form-text text-muted">{props.hint}</small>);
+            return (<small id={props.id + '-field-help'} className="form-text text-muted">{props.hint}</small>);
           }
         })()
       }
