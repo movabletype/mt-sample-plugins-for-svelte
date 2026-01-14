@@ -1,7 +1,7 @@
 name: ContentFieldTypeEmailSvlete
 id: ContentFieldTypeEmailSvlete
 key: ContentFieldTypeEmailSvelte
-version: 0.001000
+version: 0.001001
 description: <__trans phrase="This is a sample plugin to add a content field (Svelte version).">
 plugin_link: https://github.com/movabletype/mt-sample-plugins-for-svelte
 author: Six Apart Ltd.
