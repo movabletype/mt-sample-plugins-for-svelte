@@ -1,0 +1,60 @@
+<script type="module">
+  ContentTypeEditor.registerCustomType(
+    "emailc",
+    class extends ContentTypeEditor.CustomElementFieldBase {
+      connectedCallback() {
+        super.connectedCallback();
+
+        const minLengthValue = this.options.min_length ?? "0";
+        const minLengthOption = document.createElement("mt-content-field-option");
+        minLengthOption.id = "emailc-min_length";
+        minLengthOption.setAttribute("label", window.trans("Min Length"));
+        const minLengthInput = document.createElement("input");
+        minLengthInput.type = "number";
+        minLengthInput.name = "min_length";
+        minLengthInput.id = "emailc-min_length";
+        minLengthInput.className = "form-control w-25";
+        minLengthInput.min = "0";
+        minLengthInput.value = minLengthValue;
+        minLengthInput.addEventListener("change", (e) => {
+          this.options.min_length = e.target.value;
+        });
+        minLengthOption.appendChild(minLengthInput);
+        this.appendChild(minLengthOption);
+
+        const maxLengthValue = this.options.max_length ?? "255";
+        const maxLengthOption = document.createElement("mt-content-field-option");
+        maxLengthOption.id = "emailc-max_length";
+        maxLengthOption.setAttribute("label", window.trans("Max Length"));
+        const maxLengthInput = document.createElement("input");
+        maxLengthInput.type = "number";
+        maxLengthInput.name = "max_length";
+        maxLengthInput.id = "emailc-max_length";
+        maxLengthInput.className = "form-control w-25";
+        maxLengthInput.min = "1";
+        maxLengthInput.value = maxLengthValue;
+        maxLengthInput.addEventListener("change", (e) => {
+          this.options.max_length = e.target.value;
+        });
+        maxLengthOption.appendChild(maxLengthInput);
+        this.appendChild(maxLengthOption);
+
+        const initialValueValue = this.options.initial_value ?? "";
+        const initialValueOption = document.createElement("mt-content-field-option");
+        initialValueOption.id = "emailc-initial_value";
+        initialValueOption.setAttribute("label", window.trans("Initial Value"));
+        const initialValueInput = document.createElement("input");
+        initialValueInput.type = "text";
+        initialValueInput.name = "initial_value";
+        initialValueInput.id = "emailc-initial_value";
+        initialValueInput.className = "form-control";
+        initialValueInput.value = initialValueValue;
+        initialValueInput.addEventListener("change", (e) => {
+          this.options.initial_value = e.target.value;
+        });
+        initialValueOption.append(initialValueInput);
+        this.appendChild(initialValueOption);
+      }
+    }
+  );
+</script>
